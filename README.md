@@ -68,8 +68,8 @@ and the required routes, controllers, and models are created.
 ***Endpoints -***
 1. `POST /news` to create news.
 2. `GET /news/match?id=matchID` to get news related to matches.
-3. `GET /news/tour/id=tourID` to get news related to tours and matches in the tournament.
-4. `GET /news/sport/id=sportID` to get news related to the sport, tournaments in the sport, and matches.
+3. `GET /news/tour?id=tourID` to get news related to tours and matches in the tournament.
+4. `GET /news/sport?id=sportID` to get news related to the sport, tournaments in the sport, and matches.
 
 **Potential Solution**
 The schema can be redesigned to have `tourID` ,`matchID`, and `sportID` as Foreign keys but that would hinder maintainability and increase development time for any changes to the route in the future.
