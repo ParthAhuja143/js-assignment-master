@@ -65,3 +65,10 @@ CREATE TABLE IF NOT EXISTS mydb.news (
 where `entityID` is the ID for the entity (`MATCH`, `SPORT`, `TOUR`).
 
 and the required routes, controllers, and models are created.
+
+***Endpoints -***
+1. `POST /news` to create news.
+2. `GET /news/match?id=matchID` to get news related to matches.
+3. `GET /news/tour/id=tourID` to get news related to tours and matches in the tournament.
+4. `GET /news/sport/id=sportID` to get news related to the sport, tournaments in the sport, and matches.
+
